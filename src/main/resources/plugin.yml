@@ -1,0 +1,18 @@
+name: DutyRadio
+version: 1.0.0
+main: com.example.dutyradio.DutyRadioPlugin
+api-version: '1.20'
+depend: [voicechat]
+description: Handheld faction radios on top of Simple Voice Chat
+commands:
+  dutyradio:
+    description: Duty radio management
+    aliases: [radio]
+    usage: /<command> give <player> <freq> [amount] | set <freq> | reload
+permissions:
+  dutyradio.use:
+    description: Can transmit and receive on radios
+    default: true
+  dutyradio.admin:
+    description: Give radios, change frequency, reload
+    default: op

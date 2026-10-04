@@ -1,0 +1,30 @@
+# hold   = رادیو تو دست اصلی باشه => صدا روی رادیو هم میره
+# toggle = با راست‌کلیک روشن/خاموش میشه (رادیو باید توی اینونتوری باشه)
+mode: hold
+
+item:
+  material: IRON_NUGGET
+  custom-model-data: 0
+
+# کسی که نزدیک گوینده است (به بلوک) صدا رو از رادیو نمی‌شنوه تا اکو نشه. 0 = خاموش
+nearby-skip-distance: 10
+
+# آیا پچ‌پچ (whisper) هم روی رادیو بره؟
+transmit-whispers: false
+
+# اسم رادیو برای هر فرکانس (بقیه فرکانس‌ها اسم پیش‌فرض می‌گیرن)
+frequencies:
+  1: "&9رادیو پلیس"
+  2: "&cرادیو مدیک"
+  3: "&8رادیو دزدها"
+
+messages:
+  mic-on: "&aرادیو روشن شد - فرکانس %freq%"
+  mic-off: "&cرادیو خاموش شد"
+  lore-freq: "&7فرکانس: &f%freq%"
+  given: "&aرادیو فرکانس %freq% به %player% داده شد"
+  set: "&aفرکانس رادیو شد %freq%"
+  need-radio: "&cباید رادیو توی دستت باشه"
+  no-perm: "&cدسترسی نداری"
+  reloaded: "&aتنظیمات دوباره بارگذاری شد"
+  usage: "&e/radio give <player> <freq> [amount] | /radio set <freq> | /radio reload"
